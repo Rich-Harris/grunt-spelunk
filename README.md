@@ -45,7 +45,7 @@ grunt.initConfig({
 #### exclude
 Type: `String` or `Array`
 
-A pattern, or array of patterns, of filenames to exclude, e.g. `**/*/notes.md`. Uses the standard globbing syntax. `.DS_Store` and `Thumbs.db` files will **always** be excluded - you don't need to specify these.
+A pattern, or array of patterns, of filenames to exclude, e.g. `**/README.md`. Uses the standard globbing syntax. `.DS_Store` and `Thumbs.db` files will **always** be excluded - you don't need to specify these.
 
 #### replacer
 Type: `Function` or `Array`
@@ -71,16 +71,19 @@ If `true`, spelunk will create an AMD module (as above, extension should be `.js
 ### Usage Examples
 
 #### Default Options
-This will read the contents of `project/data` and write a JSON file representing its contents to `project/src/data.json`:
+This will read the contents of `project/data` and write a JSON file representing its contents to `project/src/data.json`, excluding any README files:
 
 ```js
 grunt.initConfig({
   spelunk: {
     data: {
       root: 'project/data',
-      dest: 'project/src/data.json'
-    },
-  },
+      dest: 'project/src/data.json',
+      options: {
+        exclude: '**/README.md'
+      }
+    }
+  }
 })
 ```
 
