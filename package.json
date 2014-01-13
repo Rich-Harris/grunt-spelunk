@@ -1,0 +1,35 @@
+{
+	"name": "grunt-spelunk",
+	"description": "Flatten a folder to a JSON representation of its contents",
+	"homepage": "https://github.com/Rich-Harris/grunt-spelunk",
+	"author": {
+		"name": "Rich Harris",
+		"email": "richard.a.harris@gmail.com",
+		"url": "http://rich-harris.co.uk"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Rich-Harris/grunt-spelunk.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Rich-Harris/grunt-spelunk/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/Rich-Harris/grunt-spelunk/blob/master/LICENSE.md"
+		}
+	],
+	"engines": {
+		"node": ">= 0.8.0"
+	},
+	"devDependencies": {
+		"grunt": "~0.4.2"
+	},
+	"dependencies": {
+		"spelunk": "~0.1.0"
+	},
+	"keywords": [
+		"gruntplugin"
+	]
+}
